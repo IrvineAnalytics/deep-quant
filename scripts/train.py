@@ -174,4 +174,5 @@ def train_model(config):
             else:
                 if ( (config.early_stop is None) or 
                      (valid_history[-1] <= min(valid_history)) ):
-                    model_utils.save_model(session,config,i)
+                    ####### SRJ - adding model
+                    model_utils.save_model(session,config,i,model)
